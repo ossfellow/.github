@@ -6,7 +6,7 @@ on:
       keep_versions:
         description: 'Number of versions to keep (0 for complete cleanup)'
         required: false
-        default: 1
+        default: 3
         type: number
       packages:
         description: 'Comma-separated list of package names to clean'
