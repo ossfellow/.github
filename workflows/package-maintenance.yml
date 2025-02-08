@@ -31,6 +31,7 @@ jobs:
 
     steps:
       - name: Run cleanup script
+        continue-on-error: true
         run: |
           TOKEN="${{ secrets.GITHUB_TOKEN }}"
           
