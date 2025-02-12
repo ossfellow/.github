@@ -49,7 +49,5 @@ runs:
             mkdir -p "${{ github.workspace }}/.github/$(dirname $asset)"
             # Copy the file
             cp -f "${{ github.workspace }}/dugout/.github/$asset" "${{ github.workspace }}/.github/$asset"
-            echo "Checking if asset was copied successfully..."
-            ls -lh "${{ github.workspace }}/.github/$asset"
           fi
         done
